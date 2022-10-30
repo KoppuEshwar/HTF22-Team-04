@@ -1,0 +1,46 @@
+<% layout('layouts/boilerplate')%>
+<div class="row">
+    <h1 class="text-center">Add Event</h1>
+    <div class="col-6 offset-3">
+        <form action="/Addevent" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="food[title]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+           
+             <div class="mb-3">
+                <label class="form-label" for="image">Image</label>
+                <input class="form-control" type="text" id="image" name="food[posterUrl]]">
+            </div>  
+            <div class="mb-3">
+                <label class="form-label" for="price"> date</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="price" placeholder="" aria-label="price"
+                        aria-describedby="price-label" name="food[date]" required>
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="price">location</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="price" placeholder="" aria-label="price"
+                        aria-describedby="price-label" name="food[location]" required>
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            
+            <div class="mb-3">
+                <button class="btn btn-success">Add Event</button>
+            </div>
+        </form>
+        
+    </div>
+</div>

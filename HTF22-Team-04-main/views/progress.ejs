@@ -1,0 +1,41 @@
+
+ 
+
+ 
+    <% layout('layouts/boilerplate')%>
+   
+
+
+
+ <% if (x==1) { %>
+    <% layout('layouts/sboilerplate')%>
+
+     
+<a class="btn btn-primary" href="/alumni/<%=rollno%>/Addprogress">Add Progress </a>
+ <%}%>
+ 
+ <h4><%= name %></h4>
+ <h4><%= branch %></h4>
+ <h4><%= rollno %></h4>
+
+
+ <h1>Progress</h1>
+ <br>
+
+<% for (let campground of career){%>
+    <br>
+<div class="card" mb-3>
+    <div class="row">
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"><%= campground.from %> </h5>
+                <h5 class="card-title"> Organization:<%= campground.Organization %> </h5>
+                <h5 class="card-title"> <%= campground.role %> </h5>
+             </div>
+        </div>
+    </div>
+</div>
+<% }%>

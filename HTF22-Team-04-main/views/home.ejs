@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate')%>
+ 
+<h1>Events</h1>
+ 
+<div class="row">
+
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search based on title" aria-label="Search" name="title">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+     
+
+    <% for (let campground of eventList){%>
+     
+      
+
+    <div class="col">
+        <div class="card" style="width: 18rem; margin : 20px;">
+            <img src="<%=campground.posterUrl%>" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;" ><%= campground.title %> </h5>
+              <p class="card-text"   style="text-align: center;"   > On<%= campground.date %></p>
+               
+            <!-- <a href="#!" class="btn btn-primary">Add</a>--> 
+            <p class="card-text"   style=" text-align: center;"   > <%= campground.mode %></p>
+           
+             <p class="card-text"   style=" text-align: center;"   > <%= campground.location %></p>
+
+
+           
+              
+          
+
+
+           
+            </div>
+          </div>
+</div>
+<% }%>
+ 
+ 
+
+
+ 
+ 
+
+ 
+
+
+ 
+
+

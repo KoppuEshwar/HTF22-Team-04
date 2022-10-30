@@ -1,0 +1,46 @@
+<% layout('layouts/sboilerplate')%>
+<div class="row">
+    <h1 class="text-center">Add Progress</h1>
+    <div class="col-6 offset-3">
+        <form action="/alumni/<%=id %>/Addprogress" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="title">Joining year</label>
+                <input class="form-control" type="text" id="title" name="food[from]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+           
+            <!-- <div class="mb-3">
+                <label class="form-label" for="image">Joining year</label>
+                <input class="form-control" type="text" id="image" name="food[to]">
+            </div> -->
+            <div class="mb-3">
+                <label class="form-label" for="price">Role</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="price" placeholder="" aria-label="price"
+                        aria-describedby="price-label" name="food[role]" required>
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="price">Organization</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="price" placeholder="" aria-label="price"
+                        aria-describedby="price-label" name="food[Organization]" required>
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            
+            <div class="mb-3">
+                <button class="btn btn-success">Add Progress</button>
+            </div>
+        </form>
+        
+    </div>
+</div>
